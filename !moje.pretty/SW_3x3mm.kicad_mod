@@ -1,0 +1,197 @@
+(footprint "SW_3x3mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Surface Mount Tactile Switch for High-Density Mounting, 3.1mm height, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
+	(tags "Tactile Switch")
+	(property "Reference" "SW2"
+		(at 0 -4.3 0)
+		(layer "F.SilkS")
+		(uuid "1942d191-808a-4e4f-ab18-a9b10cdb382e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "PROG"
+		(at 0 4.2 0)
+		(layer "F.Fab")
+		(uuid "021940f1-5ab1-41ce-93ef-d8cc2193ee14")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d36a4c1d-264b-4966-80e1-afd93c48e86e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Omron B3FS 6x6mm single pole normally-open tactile switch"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "98322c14-7de1-4d77-a003-364dbd78c4b4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.37 -2.04)
+		(end -1.37 -2.04)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fe345617-5376-4d1f-a8b9-d8d05f427f9c")
+	)
+	(fp_line
+		(start -2.37 -1.04)
+		(end -2.37 -2.04)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "33df37e4-e088-45d5-9654-04d01873eec2")
+	)
+	(fp_line
+		(start -1.65 -0.475)
+		(end -1.65 0.475)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e6b95a23-8a78-4d3c-aa34-ade3681f6159")
+	)
+	(fp_line
+		(start 1.65 -0.49)
+		(end 1.65 0.49)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "84dc7837-cdc1-4317-9e94-128d64041bcf")
+	)
+	(fp_line
+		(start 1.65 1.645)
+		(end -1.65 1.655)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "582b2161-5674-486a-9719-e1eb73d5b12d")
+	)
+	(fp_line
+		(start 1.65129 -1.65152)
+		(end -1.651291 -1.648479)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "aa04b8e0-2138-47cb-b190-a34aab920f71")
+	)
+	(fp_rect
+		(start -2.21 -1.9)
+		(end 2.21 1.95)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "aaf44d09-c2bc-4e71-94f2-0b61599407d0")
+	)
+	(fp_rect
+		(start -1.6 -1.6)
+		(end 1.6 1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "43aebd44-8590-42be-bc9c-547bd21c9c66")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0.8 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "27615bcc-3c99-45ca-8814-b6eb8072829d")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -2.2 0)
+		(layer "F.Fab")
+		(uuid "31d37ddc-1461-4080-b6eb-2dc593c1128c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.78 -1.02125 180)
+		(size 0.63 0.5025)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d9e6944c-f847-427e-9a28-e2369fb96fa3")
+	)
+	(pad "1" smd rect
+		(at 1.8 -1.02 180)
+		(size 0.63 0.505)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7fe706ea-0816-4862-a13e-438a947b2c29")
+	)
+	(pad "2" smd rect
+		(at -1.78 1.03 180)
+		(size 0.63 0.505)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "afd244e7-c8ea-44f2-b8f1-f8f5564e8ecf")
+	)
+	(pad "2" smd rect
+		(at 1.8 1.03 180)
+		(size 0.63 0.505)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1771b0d2-13e1-417f-8f80-f8a4247cc5c4")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_Omron_B3FS-100xP.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 0.5 0.5 0.5)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

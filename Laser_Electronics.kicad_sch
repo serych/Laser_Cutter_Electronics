@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Laser Cutter Flow NC control board")
-		(date "2025-10-12")
-		(rev "v1")
+		(date "2025-10-27")
+		(rev "2")
 		(company "© JaSoSe 2025")
 	)
 	(lib_symbols
@@ -5786,16 +5786,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 77.47) (xy 63.5 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b26c1be-43b6-47a2-8483-bf9c0b15bfca")
-	)
-	(wire
-		(pts
 			(xy 87.63 116.84) (xy 86.36 116.84)
 		)
 		(stroke
@@ -6076,6 +6066,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 77.47) (xy 63.5 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32c3f2d8-33bf-455a-ae06-a0940d539ba8")
+	)
+	(wire
+		(pts
 			(xy 228.6 148.59) (xy 229.87 148.59)
 		)
 		(stroke
@@ -6123,16 +6123,6 @@
 			(type default)
 		)
 		(uuid "3b459945-531b-40ac-91d3-da87e9adc99c")
-	)
-	(wire
-		(pts
-			(xy 58.42 55.88) (xy 63.5 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3bd44a35-5336-4a97-a9a2-4f30d6a698e8")
 	)
 	(wire
 		(pts
@@ -7296,6 +7286,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 55.88) (xy 63.5 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b82bd53f-a5d9-4e22-bcf7-c9ea3e2aea69")
+	)
+	(wire
+		(pts
 			(xy 53.34 31.75) (xy 58.42 31.75)
 		)
 		(stroke
@@ -8025,7 +8025,7 @@
 		(uuid "45bf5fb6-f81e-497b-88fe-e141a9e69d11")
 	)
 	(label "io00"
-		(at 63.5 55.88 0)
+		(at 63.5 77.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8084,7 +8084,7 @@
 		)
 		(uuid "8d11d59f-8a44-4fbf-b3ac-26f853ead5df")
 	)
-	(label "cts"
+	(label "rts"
 		(at 29.21 71.12 0)
 		(effects
 			(font
@@ -8125,7 +8125,7 @@
 		(uuid "cec19060-b739-46d8-be78-2a55588add2b")
 	)
 	(label "EN"
-		(at 63.5 77.47 0)
+		(at 63.5 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8134,7 +8134,7 @@
 		)
 		(uuid "d0c0b82d-2db6-47a2-9275-b8f0e9244ed4")
 	)
-	(label "rts"
+	(label "dtr"
 		(at 29.21 60.96 0)
 		(effects
 			(font
@@ -13213,7 +13213,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 46.99 61.214 90)
 			(effects
 				(font
@@ -13758,7 +13758,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 46.99 72.39 90)
 			(effects
 				(font

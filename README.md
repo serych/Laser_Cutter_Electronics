@@ -12,7 +12,7 @@ Further upgrades can be done using OTA.
 The board also includes an **Attiny 412 processor**, which controls a WS2812 **color status LED** (internal with the option of connecting one additional external LED). This processor can be programmed via the UPDI interface (there is a connector on the board for this purpose), which is again connected to the USB-UART converter. 
 *The Attiny 412 processor with status LED is an **optional accessory**; the board works even without it.* 
 ## Files
-The schematic and PCB layout were created in [KiCad](kicad.org) 9. The Gerber and drilling files for PCB production are stored in the "Gerber" directory. 
+The schematic and PCB layout were created in [KiCad](https://kicad.org) 9. The Gerber and drilling files for PCB production are stored in the "Gerber" directory. 
 
 
 

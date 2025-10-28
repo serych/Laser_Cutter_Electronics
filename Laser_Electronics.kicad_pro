@@ -317,12 +317,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "pin_to_pin|2171700|596900|02de8419-955c-4b0d-a2a0-53c8e5254f63|02de8419-955c-4b0d-a2a0-53c8e5254f64|/12e78b25-fd5f-479b-acc7-c1bc8e700d94|/12e78b25-fd5f-479b-acc7-c1bc8e700d94|/12e78b25-fd5f-479b-acc7-c1bc8e700d94",
-        ""
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -586,7 +581,7 @@
       "plot": "Gerber/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Laser_Electronics.step",
       "svg": "",
       "vrml": ""
     },

@@ -1,0 +1,146 @@
+name: Mini TMC2130 XY Laser
+board: Mini Laser Electronics
+status_outputs:
+  report_interval_ms: 500
+  run_pin: NO_PIN
+uart1:
+  txd_pin: gpio.2
+  rxd_pin: gpio.0
+  rts_pin: NO_PIN
+  baud: 115200
+  mode: 8N1
+uart_channel1:
+  uart_num: 1
+  report_interval_ms: 500
+stepping:
+  engine: RMT
+  idle_ms: 255
+  dir_delay_us: 1
+  pulse_us: 2
+  disable_delay_us: 0
+axes:
+  shared_stepper_disable_pin: gpio.13
+  x:
+    steps_per_mm: 800
+    max_rate_mm_per_min: 2000
+    acceleration_mm_per_sec2: 25
+    max_travel_mm: 1000
+    soft_limits: false
+    homing:
+      cycle: 2
+      positive_direction: false
+      mpos_mm: 5
+      feed_mm_per_min: 100
+      seek_mm_per_min: 200
+      settle_ms: 500
+      seek_scaler: 1.1
+      feed_scaler: 1.1
+    motor0:
+      limit_neg_pin: gpio.36:low
+      tmc_2130:
+        direction_pin: gpio.12
+        step_pin: gpio.14
+        cs_pin: gpio.16
+        r_sense_ohms: 0.11
+        run_amps: 0.25
+        hold_amps: 0.25
+        microsteps: 32
+        stallguard: 0
+        stallguard_debug: false
+        toff_disable: 0
+        toff_stealthchop: 5
+        toff_coolstep: 3
+        run_mode: StealthChop
+        homing_mode: StealthChop
+        use_enable: false
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+    motor1:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+  y:
+    steps_per_mm: 800
+    max_rate_mm_per_min: 2000
+    acceleration_mm_per_sec2: 25
+    max_travel_mm: 1000
+    soft_limits: false
+    homing:
+      cycle: 2
+      positive_direction: false
+      mpos_mm: 150
+      feed_mm_per_min: 100
+      seek_mm_per_min: 200
+      settle_ms: 500
+      seek_scaler: 1.1
+      feed_scaler: 1.1
+    motor0:
+      limit_neg_pin: gpio.39:low
+      tmc_2130:
+        direction_pin: gpio.26
+        step_pin: gpio.25
+        cs_pin: gpio.17
+        r_sense_ohms: 0.11
+        run_amps: 0.25
+        hold_amps: 0.25
+        microsteps: 32
+        stallguard: 0
+        stallguard_debug: false
+        toff_disable: 0
+        toff_stealthchop: 5
+        toff_coolstep: 3
+        run_mode: StealthChop
+        homing_mode: StealthChop
+        use_enable: false
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+    motor1:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+  z:
+    steps_per_mm: 100
+    max_rate_mm_per_min: 1000
+    acceleration_mm_per_sec2: 50
+    max_travel_mm: 5
+    soft_limits: false
+    homing:
+      cycle: 1
+      positive_direction: true
+      mpos_mm: 5
+      feed_mm_per_min: 100
+      seek_mm_per_min: 200
+      settle_ms: 500
+      seek_scaler: 1.1
+      feed_scaler: 1.1
+    motor0:
+      rc_servo:
+        pwm_hz: 50
+        output_pin: NO_PIN
+        min_pulse_us: 1000
+        max_pulse_us: 2100
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+spi:
+  miso_pin: gpio.19
+  mosi_pin: gpio.23
+  sck_pin: gpio.18
+sdcard:
+  cs_pin: gpio.5
+  card_detect_pin: gpio.33
+coolant:
+  flood_pin: NO_PIN
+  mist_pin: NO_PIN
+probe:
+  pin: NO_PIN
+  toolsetter_pin: NO_PIN
+Laser:
+  pwm_hz: 5000
+  output_pin: gpio.4
+  enable_pin: NO_PIN
+  disable_with_s0: false
+  s0_with_disable: true
+  tool_num: 0
+  speed_map: 0=0.000% 255=100.000%
+  off_on_alarm: true
